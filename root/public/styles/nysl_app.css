@@ -1,0 +1,550 @@
+
+* {
+    margin-top: 0px!important;
+}
+body {
+    background-color: rgb(1, 69, 79);
+}
+#container {
+    width: 100%;
+    
+    margin-right: auto;
+    margin-left: auto;
+/*    margin-top: 15px;*/
+/*    padding: 0 10px;*/
+}
+
+/* Barra de navegacion*/
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    
+    
+}
+
+nav {  
+/*    border-radius: 20px;*/
+    background-color: lightgray;
+    width: 100%;
+    
+}
+
+.listIcon {
+    width: 25px;
+    height: 25px;
+}
+.nyslLogo {
+    width: 45px;
+    height: 45px;
+}
+.dropdown-menu {
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 10rem;
+    height: 16rem;
+    
+}
+.dropdown-menu li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    
+    
+}
+.dropdown-menu li a {
+    color: rgb(1, 69, 79);
+    font-weight: bold;
+    
+}
+.months {
+    list-style: none; 
+}
+
+/*Estilo contenido events*/
+
+section {
+    width:100%;
+    padding-top: 5rem;
+    
+}
+h2 {
+    margin-top: 2rem;
+    color: white;
+}
+
+.infoContent {
+    border: 2px dashed rgb(1, 69, 79); 
+    border-radius: 20px;
+    background-color: lightgray;
+}
+dl {
+    margin: 20px 10px;    
+}
+
+.eventsList {
+    margin: 20px 50px;
+}
+.date {
+    font-style: italic;
+    text-indent: -10px; 
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+/*Estilo September*/
+
+#monthMatches, #teamsInfo {
+    margin-top: 35px;
+    width: 90%;
+    margin-left: 1.3rem;
+}
+
+.matchDate {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: lightgray;
+}
+.moreInfo{
+    font-style: italic;
+}
+
+/*Estilo matchInfo*/
+
+.matchInfo, .matchLocation {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    text-align: left;
+    padding: 15px;
+    background-color: lightgray;
+    margin-bottom: 1.5rem;
+}
+
+#allLocations, #teamsInfo, #matchInfo, #teamMap {
+    margin-top: 2rem;
+}
+
+#monthMatches {
+    margin-top: 2rem;
+}
+.matchLocation{
+    margin-top: 3rem;   
+}
+.teamName{
+    font-weight: bold;
+}
+
+#events, #matchInfo, #teamMap, #allLocations {
+    width: 85%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.matchMorning {
+    
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-weight: bold;
+    margin-top: 35px;
+    height: 11rem;
+    text-align: center;
+    
+}
+
+/*estilo footer*/
+
+footer {
+    margin-top: 15px;
+    width: 90%;
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+.backIcon{
+    width: 35px;
+    height: 35px;
+    transform: rotate(90deg);
+    
+}
+
+iframe {
+    border-radius: 20px;
+    width: 100%;    
+}
+
+/*Estilo locations*/
+
+.locInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    vertical-align: middle;
+}
+
+.goMap {
+    text-decoration: underline;
+}
+
+.matchLocation p {
+    font-weight: bold;
+}
+
+#allLocations{
+    margin-bottom: 35px;
+}
+
+/*Estilo Teams Info*/
+
+.teamInfo1 {
+    padding-bottom: 10px;
+    width: 9rem;
+    height: 9rem;
+ 
+}
+
+.teamName1 {
+    text-align: center;
+    font-weight: bold;
+}
+.teamName2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;  
+}
+
+/*Estilo colapse teamInfo*/
+
+.card {
+    
+    background-color: lightgray;
+    border-radius: 10px;   
+}
+
+.btn {
+    white-space: normal;
+}
+
+/*Formato chat*/
+
+#chatLogin {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;  
+}
+.chatLogin2 {
+    margin-bottom: 3rem;
+}
+
+#chatLogin p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#chatLogin button {
+    width: 10rem;
+    height: 8rem;
+    border-radius: 20px;
+    background-color: lightgreen;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+#chatLogin a {
+    font-size: 2.5rem;
+    color: rgb(1, 69, 79);
+    font-weight: bold;
+}
+
+#chatTeam1 {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.chatHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.chatHead1 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+#user {
+    font-style: italic;
+}
+
+.chatHead2 {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: lightcoral;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 2.2rem;
+}
+
+.chatHead3 {
+    color: rgb(1, 69, 79);
+    font-weight: bold;
+}
+.chatTeamName {
+    padding-left: 4.2rem;
+    margin-top: 0.5rem;
+}
+.cardChat {
+    margin-top: 0.5rem;
+    
+}
+.chatTeamBtn {
+    margin-top: 1rem;
+   
+}
+#message {
+    width: 85%;
+    border-color: gray;
+    
+}
+.writeChat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.chatIcon {
+    width: 3rem;
+    height: 3rem;
+}
+
+#posts {
+    height: 23rem;
+    overflow: auto;
+    padding-bottom: 5rem;
+    border: 5px solid gray;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+     
+}
+#posts div {
+    margin-bottom: 0.7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border: 0.05rem solid gray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.userActive {
+    background-color: rgb(254, 254, 119)!important;
+    
+}
+.titlePostStyle {
+    display: flex;
+}
+.dateStyle {
+    font-size: 0.8rem;
+    color: grey;
+    width: 50%;
+    font-style: italic;
+    float: right;
+    text-align: right;
+     
+}
+
+.gmailLogo {
+    width: 6rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+}
+#login {
+    font-size: 2.5rem;
+    color: rgb(1, 69, 79);
+    font-weight: bold;
+}
+
+#logOut {
+    font-size: 1rem;
+    color: rgb(1, 69, 79);
+    font-weight: bold;
+}
+
+/*Estilo de hacer desaparecer y aparecer el header*/
+
+/*
+.aparece {
+    transition: opacity .3s ease; 
+    opacity: 1; 
+}
+
+.desaparece {
+    transition: opacity 3s ease; 
+    opacity: 0; 
+}
+
+*/
+
+@media (orientation: portrait) {
+    
+    #monthMatches, #teamsInfo, #matchInfo, #teamMap, #allLocations, footer, #chatLogin, #chatTeam1 {
+        display: none;
+    }
+    .teamInfo3 {
+        display: flex;
+    }
+    .teamInfo2 {
+        padding-left: 40px;
+        align-self: center;
+    }
+}
+
+/*Estilo orientación horizontal*/
+
+@media (orientation: landscape) and (min-width: 450px) {
+    
+    #monthMatches, #teamsInfo, #matchInfo, #teamMap, #allLocations, footer, #chatLogin, #chatTeam1 {
+        display: none;
+}
+    h2 {
+        margin-top: 4rem;
+    } 
+    .matchMorning {
+        display: inline-block;
+        width: 14rem;
+        margin-left: 1rem;
+        margin-right: 3px;
+    }
+    
+    .September, .October {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .matchDate {
+       display: inline-block;
+        width: 40%;     
+    }
+    
+    .matchDate2 {
+        margin-left: 45px;
+    }
+    .btn {
+        width: 100%; 
+    }
+    .teamInfo3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .teamInfo4 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .teamInfo2 {
+        align-self: center;
+        width: 100%;
+    }
+    .teamInfo1 {
+        padding-bottom: 10px;
+        align-self: center;
+        width: 7rem;
+        height: 7rem;
+    }
+    .chatLogin4 {
+        display: flex;
+        margin-left: 1rem;
+    }
+    
+    .chatLogin2 {
+        width: 50%;
+        padding-top: 3rem;
+       
+    }
+    .chatLogin3 {
+        margin-top: 3rem!important;
+    }
+    .chatTeam2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .chatTeamBtn {
+        width: 65%;
+       
+    }
+    .chatHead {
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .chatHead2 {
+        width: 5rem;
+        margin: 0;
+    }
+    .chatHead1 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .dateStyle {
+        margin-left: 8rem;
+    }
+    
+    .chatHead2 {
+        width: 5rem;
+/*        margin: 0;*/
+    }
+    #events, #teamMap, #allLocations {
+        width: 85%;
+        margin-left: 3.3rem;
+}
+    #matchInfo {
+        width: 90%;
+        margin-left: 4rem; 
+        padding-top: 2rem;
+    }
+    
+    #teamsInfo {
+        margin-left: 2rem;
+        padding-top: 0.5rem;
+    }
+     #monthMatches {
+        margin-left: 3rem;
+        padding-top: 0.5rem;
+    }
+    footer {
+        margin-left: 4rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+

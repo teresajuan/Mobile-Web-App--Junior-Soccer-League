@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" sizes="196x196" href="styles/images/nysl_logo.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nysl_app.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <header class="row">
+            <nav class="navbar navbar-default">
+                <div class=" col-xs-1 dropdown navApp">
+                    <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <img class="listIcon" src="styles/images/lista2.png" alt="icono de lista para menu desplegable">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a id="navTeamInfo" href="#">Teams Info</a></li>
+                        Matches in
+                        <ul class="list">
+                            <li class="months"><a class="navSeptember" href="#">September</a></li>
+                            <li class="months"><a class="navSeptember" href="#">October</a></li>
+                        </ul>
+                        <li><a id="navLocations" href="#">Locations</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-10 navApp"><img class="nyslLogo" src="styles/images/nysl_logo.png" alt="logo nysl"><span> NYSL Info</span></div>
+                <div class="col-xs-1 navApp"><a id="homeIcon" href="#"><img class="listIcon" src="styles/images/home.png" alt="icono home"></a></div>
+            </nav>
+        </header>
+        <section>
+            <div class="container col-xs-12">
+                <div class="row">
+                    <div id="chatTeam1">
+                        <div class="chatHead">
+                            <p class="chatHead1">Welcome to the NYSL chat</p>
+                            <button class="btn btn-default chatHead2" type="button" aria-haspopup="true" aria-expanded="true">
+                                <a class="chatHead3" href="#">Logout</a>
+                        </div>
+                        <div class="btn matchLocation locInfo chatTeamBtn" data-toggle="collapse" href="#collapseChat" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="chatTeamTitle">
+                                <img class="teamLogo" src="styles/images/Knights.png" alt="AJ Katzenmaier Academy" title="AJ Katzenmaier Academy">
+                            </div>
+                            <div class="chatTeamName">
+                                <p class="teamName1">Team U1: </p>
+                                <p class="teamName2"> AJ Katzenmaier Elementary</p>
+                            </div>
+                            
+                        </div>
+                        <div class="collapse" id="collapseChat">
+                            <div class="card cardChat">
+                                <div id="posts">
+                                    
+                                    
+                                </div>
+                                <div class="writeChat">
+                                    <input id="message" type="text" placeholder="Write here...">
+                                    <button id="create-post"><img class="chatIcon" src="chatIcon2.png" alt="icono para enviar posts"></button>
+                                </div>
+                                <button id="login">Login!</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCdZew8CQdDddMo0zfLkjNXeUJG6-uaciA",
+                authDomain: "teresaapp-61f49.firebaseapp.com",
+                databaseURL: "https://teresaapp-61f49.firebaseio.com",
+                projectId: "teresaapp-61f49",
+                storageBucket: "teresaapp-61f49.appspot.com",
+                messagingSenderId: "826326302001"
+            };
+            firebase.initializeApp(config);
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js" integrity="sha256-XDU6Po3hKjdQXJHRrKrWlIF/E6y6BBgV5eiqZSYePpo=" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        <script src="scripts/functions.js"></script>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nysl_app.css">
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav class="row navbar navbar-default">  
+                <div class=" col-xs-1 dropdown navApp">
+                    <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <img class="listIcon" src="styles/images/lista2.png" alt="icono de lista para menu desplegable">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="teamsInfo.html">Teams Info</a></li>
+                        Matches in
+                        <ul>
+                            <li class="months"><a href="september.html">September</a></li>
+                            <li class="months"><a href="september.html">October</a></li> 
+                        </ul>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>                            
+                </div>
+                <div class="col-xs-10 navApp"><img class="nyslLogo" src="styles/images/nysl_logo.png" alt="logo nysl"><span> NYSL Info</span></div>
+                <div class="col-xs-1 navApp"><a href="index.html"><img class="listIcon" src="styles/images/home.png" alt="icono home"></a></div>   
+            </nav>
+        </header>
+        <section>
+            <div class="matchLocation">
+                <p>Location: AJ Katzenmaier Elementary</p>
+                <p>Address: 24 W. Walton St., Chicago, IL 60610</p>
+                <div class="map1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5939.3133015173335!2d-87.6334490672043!3d41.90024067200759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses!2ses!4v1510829241800" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>  
+        </section>
+        <footer>
+            <div class="col-xs-1 navApp">
+                <a href="matches.html"><img class="backIcon" src="styles/images/back2.png" alt="icono back">
+                </a>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js" integrity="sha256-XDU6Po3hKjdQXJHRrKrWlIF/E6y6BBgV5eiqZSYePpo=" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <script src="scripts/functions.js"></script>
+    </div>
+</body>
+
+</html>
